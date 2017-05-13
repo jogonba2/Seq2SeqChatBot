@@ -1,0 +1,7 @@
+model: AttentionSeq2Seq
+model_params:
+  embedding.dim: 256
+  encoder.class: seq2seq.encoders.BidirectionalRNNEncoder
+  encoder.params:
+    rnn_cell:
+      cell_class: GRUCell
